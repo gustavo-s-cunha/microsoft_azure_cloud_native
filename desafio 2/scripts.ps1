@@ -30,7 +30,7 @@ docker push bloggustavoacr.azurecr.io/blog-gustavo-app:latest
 az containerapp env create  --name blog-gustavo-env --resource-group containerappslab03 --location eastus 
 
 # Create Container App
-az containerapp create --name blog-gustavo-app --resource-group containerappslab03 --image bloggustavoacr.azurecr.io/blog-gustavo-app:latest --environment blog-gustavo-env --target-port 80 --ingress external --registry-username bloggustavoacr --registry-password duzYmeARNVgFRMrndpcI91oXkqOJfC4YjrZYUDyAxQ+ACRCFxFzB --registry-server bloggustavoacr.azurecr.io
+az containerapp create --name blog-gustavo-app --resource-group containerappslab03 --image bloggustavoacr.azurecr.io/blog-gustavo-app:latest --environment blog-gustavo-env --target-port 80 --ingress external --registry-username bloggustavoacr --registry-password my_pass --registry-server bloggustavoacr.azurecr.io
 
 
 # az containerapp create \
@@ -42,7 +42,7 @@ az containerapp create --name blog-gustavo-app --resource-group containerappslab
 # --target-port 80 \ 
 # --ingress external
 # --registry-username bloggustavoacr
-# --registry-password duzYmeARNVgFRMrndpcI91oXkqOJfC4YjrZYUDyAxQ+ACRCFxFzB
+# --registry-password my_pass
 # --registry-server bloggustavoacr.azurecr.io
 
 
