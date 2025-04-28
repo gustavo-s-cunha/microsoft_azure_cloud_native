@@ -1,0 +1,9 @@
+/node_modules
+/build
+/.vscode
+
+# lock files
+*-lock.json
+
+# Local env files
+.env
