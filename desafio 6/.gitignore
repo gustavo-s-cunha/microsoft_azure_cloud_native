@@ -1,0 +1,11 @@
+node_modules/
+build/
+.vscode/
+.vs/
+
+# lock files
+*-lock
+*.lock
+
+# Local env files
+.env
